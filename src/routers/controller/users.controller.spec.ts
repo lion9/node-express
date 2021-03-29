@@ -27,10 +27,6 @@ describe('UserController: ', () => {
     };
     const nextFunction = jest.fn();
 
-    test('the  class constructor should have been called', () => {
-        expect(UserService).toHaveBeenCalled();
-    });
-
     test('should send auth token in case of success scenario', async () => {
         // @ts-ignore
         userService.login.mockResolvedValue('s$sdfDgf45d').mockRejectedValue('error');
@@ -38,9 +34,5 @@ describe('UserController: ', () => {
         await UserController.login(mockReq as Request, mockRes as any as Response, nextFunction as NextFunction);
         expect(mockRes.setHeader.mock.calls[0]).toEqual(['authorisation', `Bearer ${fakeToken}`]);
         expect(mockRes.send.mock.calls[0][0]).toEqual('Logged in');
-    });
-
-    test('should throw an error', async () => {
-        return expect((userService.login as jest.Mock)()).rejects.toMatch('error');
     });
 });
