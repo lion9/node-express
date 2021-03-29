@@ -1,0 +1,11 @@
+node_modules/
+build/
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/codeStyles/Project.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/modules.xml
+/.idea/nodejs_2021q2.iml
+/.idea/vcs.xml
+/.idea/.gitignore
+/.idea/jsLibraryMappings.xml
+/.idea/libraries/jest.xml

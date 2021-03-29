@@ -1,0 +1,22 @@
+{
+	"editor.codeActionsOnSave": [
+		"source.fixAll.format",
+		"source.fixAll.eslint"
+	],
+	"sqltools.connections": [
+		{
+			"pgOptions": {
+				"ssl": {
+					"rejectUnauthorized": false
+				}
+			},
+			"previewLimit": 50,
+			"server": "localhost",
+			"port": 5432,
+			"askForPassword": true,
+			"driver": "PostgreSQL",
+			"name": "heroku",
+			"connectString": "postgres://duiwumwhlqduov:7cc2ff6c9db10a6a3dc66db78d441ffa397e309ef5c120840a7c8dc446ba2251@ec2-54-74-35-87.eu-west-1.compute.amazonaws.com:5432/d8sq6dkfgr3lfu"
+		}
+	]
+}
